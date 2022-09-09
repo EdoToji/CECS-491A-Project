@@ -1,0 +1,79 @@
+﻿Desktop Cyber Sec App
+Brandon Delliquadri, Victoria Macali, Jaime Alvarenga, Aaron Villaseñor
+                                                
+We are looking to create a desktop application that aims to keep user information secure by providing a wide range of cyber security tools. Users should be able to easily create an account, upload files, and encrypt/decrypt data. We want the application to be as user friendly as possible so that users can feel at ease and in control. Keeping the application up to date with the latest bug fixes and updates is of the utmost importance. 
+                                                
+BUSINESS REQUIREMENTS:                                                
+1. Features that we will need: 
+   1.  Desktop Application Hub
+      1. A portable program similar to GUIs like seen in Antivirus software
+      2. Designed to be easily expanded with more utilities as development continues
+         1. This is the key principle of this product
+         2. Constant new tools that provide users with more mechanics
+   2. File encryption
+      1. Users can upload files to the program and it will encrypt them using modern NIST encryption standards
+   3. File decryption
+      1. Users can upload encrypted files and the program will decrypt them
+   4. Individual file scan for hidden files
+      1. Users can upload a file to have scanned for various steganographic irregularities or contain hidden files
+         1. Often time can come in form of zip folders inside of files
+      2. If the file does contain other files prompt user to ask if they would like to extract hidden files
+   5. Whole device scan for hidden files
+      1. Branch through entire file system and check files one by one to determine if they contain hidden files within them
+   6. Password vault
+      1. Encrypted password vault
+         1. users can do the following:
+            1. Add account information
+            2. Edit account information
+            3. Delete account information
+   7. Notifications
+      1. Windows desktop notifications that update user on status of various processes
+2. Other Considerations
+   1. Required data for this application
+      1. Email
+      2. Password
+         1. These in conjunction allow us to ensure the user is an active owner of the product
+
+
+SOFTWARE REQUIREMENTS:                                                
+1. Desktop Application
+1. A  desktop application that is compatible with standard Mac and Windows Operating Systems
+   1. Additional Linux OS                                                                                                                                          
+2. User Interface:
+1. Dark mode default 
+2. Light mode compatible
+3. Simple design that can be used by various ages of users
+
+
+3. Reliability:
+1. The desktop application with be a python GUI and should be reliable no matter the network connection                                                
+4. User Authentication:
+1. Standard Username and Password Login
+   1. Additional Two-Factor Authentication Optional                                                 
+5. Security:
+1. Ensure there is only one active account on the app at any given time
+2. Require strong passwords than need be updated regularly 
+                                                
+
+
+HARDWARE REQUIREMENTS:                                                
+1. Data Storage:
+1. All user data will be stored in our remote servers
+                                                
+2. Server:
+1. A relational database server capable of handling encrypted files and necessary keys
+3. Compatibility:                                        
+a. A reliable network connection
+b. Local Access for viewing files only when not connected to a network
+                                                
+SUPPORT:
+1. Maintenance
+   1. Maintaining the quality of the software via bug fixes and quality of life improvements to the base software
+2. Further Development
+   1. The whole idea of the platform is to be constantly updated
+   2. As more tools are developed they can be added modularly to the platform
+                                                
+We expect the application to be complete by the end of the Spring 2023 semester. All of the requirements should be fulfilled in a timely manner and we will continue to meet with you in order to discuss progress, any changes, or elaborate on any of the requirements. 
+Thank you,
+Neal Terrell
+CSU, Long Beach
