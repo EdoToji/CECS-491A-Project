@@ -17,3 +17,10 @@ PRD Document: https://docs.google.com/document/d/1i1knuErGXAFHAXuKYiP0zMkb04TBqN
 *The link for the design document is in this file under the Design Detailes
 
 Project Feedback Document: https://csulb-my.sharepoint.com/:w:/g/personal/arash_saifhashemi_csulb_edu/Edbs8rQlZd9Fk4HEan7HX00BIVQMP1l17dKZEhBR59li9A?e=TKW0tB
+
+Musashi v2:https://drive.google.com/drive/folders/1Ampv8-ddWVdpCWuBNFFN1urOtNO0ZC5v?usp=sharing
+
+How to Run Musashi from terminal:
+- enter Musashi directory
+- npm install
+- npm start
