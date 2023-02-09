@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Musashi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+
+.form {
+  text-align: center;
+}
+#mySidebar a .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+#mySidebar:hover .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+.active {
+  background-color: #818181;
+  color: white;
+}
+.dropdown-container {
+  display: none;
+  background-color: none;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+</style>
+</head>
+<body class="w3-light-grey">
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+<button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
+onclick="w3_open();"><i class="fa fa-bars"></i> Menu</button>
+<span class="w3-bar-item w3-right"> <img src="images/white-musashi-logo.png" style="width:100px" alt="Musashi" class="center"></span>
+</div>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;"
+id="mySidebar"><br>
+<div class="w3-container w3-row">
+<div class="w3-col s4">
+</div>
+<div class="w3-col s8 w3-bar">
+<h3>Hello Admin!</h3>
+</div>
+</div>
+<hr>
+<div class="w3-container">
+
+</div>
+<div class="w3-bar-block">
+<a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey
+w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>
+Close Menu</a>
+<a href="#" class="w3-bar-item w3-button w3-padding w3-blue fas" onclick="window.location.href='loginPage.html';"><i class='fas fa-arrow-alt-circle-left'></i>Exit</a>
+<a href="#" class="w3-bar-item w3-button w3-padding" onclick="window.location.href='index.html';">
+Encrypt/Decrypt Files</a>
+
+  <a href="#" class=" w3-bar-item w3-button w3-padding dropdown-btn">Steganography
+  <i class="fa fa-caret-down"></i>
+  </a>
+  <div class="dropdown-container">
+    <a href="#" class="w3-bar-item w3-button w3-padding" onclick="window.location.href='hideFilesPage.html';">Hide Message</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding">Open Message</a>
+    <!--<a href="#">Link 3</a> -->
+  </div>
+<a href="#" class="w3-bar-item w3-button w3-padding" onclick="window.location.href='passwordManager.html';">
+Password Manager</a>
+</div>
+<div>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+</div>
+</nav>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()"
+style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+<!-- Header -->
+<header class="w3-container" style="padding-top:22px">
+</header>
+<footer class="form">
+  <p>Welcome to our CyberSecurity MultiTool. 
+    With our product you can both encrypt and decrypt files, and store all your unique passwords.
+    <br> - The Developers
+</p>  
+</footer>
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+if (mySidebar.style.display === 'block') {
+mySidebar.style.display = 'none';
+overlayBg.style.display = "none";
+} else {
+mySidebar.style.display = 'block';
+overlayBg.style.display = "block";
+}
+}
+// Close the sidebar with the close button
+function w3_close() {
+mySidebar.style.display = "none";
+overlayBg.style.display = "none";
+}
+function show_encrypt(){
+    //ISSUE:
+    //We need to somehow launch the encrypt javascript here
+}
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
