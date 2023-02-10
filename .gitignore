@@ -2,3 +2,17 @@
 *.xml
 
 .idea/CECS-491A-Project.iml
+
+*.pak
+
+*.dll
+
+*.exe
+
+node_modules/electron/dist/icudtl.dat
+
+node_modules/electron/dist/resources/default_app.asar
+
+node_modules/electron/dist/v8_context_snapshot.bin
+
+*.asar
