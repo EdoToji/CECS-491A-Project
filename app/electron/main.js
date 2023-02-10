@@ -34,7 +34,7 @@ function createMainWindow() {
     mainWindow.webContents.openDevTools();
   }
 
-  mainWindow.loadFile(path.join(__dirname, "../src/loginPage.html"));
+  mainWindow.loadFile(path.join(__dirname, "../src/homePage.html"));
 }
 
 const menuTemplate = [
